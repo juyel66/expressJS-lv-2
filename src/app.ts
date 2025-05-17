@@ -53,14 +53,10 @@ app.get('/', logger, async(req: Request, res: Response, next: NextFunction) => {
 
 
   } catch(error) {
-    // console.log(error);
+    console.log(error);
 
     next(error);
-    // res.status(400).json({
-    //   success: false, 
-    //   message: "failed to get data",
-    // })
-
+  
   }
 })
 
